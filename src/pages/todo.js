@@ -9,7 +9,6 @@ class ToDo extends React.Component {
     }
 
     addNewItem = () => {
-        //let newItem = document.getElementById("newItem");
         this.setState({items: [...this.state.items, "Jose"] })
     }
 
