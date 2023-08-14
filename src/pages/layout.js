@@ -1,4 +1,4 @@
-import { Outlet, Link, NavLink } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 const Layout = () => {
@@ -10,16 +10,11 @@ const Layout = () => {
               <NavLink className="navbar-item navbar-link" to="/">Home</NavLink>
               <NavDropdown className="dropbtn" 
                 title={<span style={{color: "white"}}>Applications</span>}>
-                  <NavDropdown.Item><NavLink className="navbar-link" to="/counter">Counter</NavLink></NavDropdown.Item>
+                  <NavDropdown.Item href="/counter">Counter</NavDropdown.Item>
+                  <NavDropdown.Item href="/todo">To-Do</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar>
-          {/* <Nav className="navbar">
-            <Nav.Link href="/">Home</Nav.Link>
-            <NavDropdown className="dropdown-btn" title="Applications" id="basic-nav-dropdown">
-              <NavDropdown.Item className="dropdown-item" href="/counter">Counter</NavDropdown.Item>
-            </NavDropdown>
-          </Nav> */}
 
           <Outlet />
         </div>

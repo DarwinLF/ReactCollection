@@ -1,6 +1,7 @@
-/* .App {
-  text-align: center;
-} */
+body {
+  background-color: rgba(0, 0, 0, 0.815);
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -37,6 +38,10 @@
   }
 }
 
+h1, p {
+  color: white;
+}
+
 /*Navigation Bar*/
 
 .navbar {
@@ -64,8 +69,15 @@
   border: none;
 }
 
-
-
 .dropdown-menu {
   overflow-y: scroll;
+}
+
+/*containers*/
+.center {
+  min-height: 80vh;
+}
+
+.input-group {
+  width: 40vw;
 }

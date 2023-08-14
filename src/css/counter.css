@@ -1,9 +1,0 @@
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 80vh;
-    background-color: rgb(48, 48, 48);
-}

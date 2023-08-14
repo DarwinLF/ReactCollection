@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from "./pages/layout";
 import Home from "./pages/home";
 import Counter from './pages/counter';
+import ToDo from './pages/todo';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<Layout/>}>
             <Route index path='/' element={<Home/>}/>
             <Route path="counter" element={<Counter/>}/>
+            <Route path="todo" element={<ToDo/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
