@@ -1,6 +1,6 @@
 import {useState} from "react";
 import "../App.css";
-import { Form, Container, Button, InputGroup } from "react-bootstrap";
+import { Form, Container, Button, InputGroup, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightToBracket} from "@fortawesome/free-solid-svg-icons";
 
@@ -29,9 +29,13 @@ function ToDo() {
                     </InputGroup>
                 </Form>
             </Container>
-            <Container className="d-flex justify-content-center">
+            <Container className="d-flex justify-content-center flex-column align-items-center">
                 {tasks.map(element => {
-                        return (<p>{element}</p>);
+                        return (
+                            <Row>
+                                <p>{element}</p>
+                            </Row>
+                        );
                 })}
             </Container>
         </>

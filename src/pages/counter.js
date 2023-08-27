@@ -18,8 +18,10 @@ function Counter() {
     return (
         <Container className="d-flex justify-content-center align-items-center flex-column center">
             <h1>{count}</h1>
-            <Button variant="secondary" onClick={increment}><FontAwesomeIcon icon={faCaretUp}/></Button>
-            <Button variant="dark" onClick={decrement}><FontAwesomeIcon icon={faCaretDown}/></Button>
+            <Container className="d-flex justify-content-center align-items-center flex-row">
+                <Button variant="secondary" onClick={increment}><FontAwesomeIcon icon={faCaretUp}/></Button>
+                <Button variant="dark" onClick={decrement}><FontAwesomeIcon icon={faCaretDown}/></Button>
+            </Container>
         </Container>
     );
 }
