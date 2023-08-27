@@ -1,10 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from "./pages/layout";
-import Home from "./pages/home";
-import Counter from './pages/counter';
-import ToDo from './pages/todo';
+import Layout from "./components/layout";
+import Home from "./components/home";
+import Counter from './components/counter';
+import ToDo from './components/todo';
 
 function App() {
   return (
